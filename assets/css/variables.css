@@ -16,6 +16,7 @@
   --bs-body-fs-secondary: "Roboto Slab", serif;
 
   /* tailles */
+  --fs-s: 0.85rem;
   --fs-sm: 1rem;
   --fs-base: 1.3rem;
   --fs-lg: 1.6rem;
