@@ -26,6 +26,34 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/variables.css" />
+    <style>
+      /* Responsive layout for features section */
+      .features-row {
+        display: block;
+      }
+      @media (min-width: 992px) {
+        .features-row {
+          display: flex;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+        .features-row .oti3 {
+          flex: 1 1 0;
+          order: 1;
+        }
+        .features-row .img-container2 {
+          flex: 0 0 40%;
+          order: 2;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .features-row .img-container2 img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -93,7 +121,7 @@
     </header>
 
     <body>
-      <section id="benefits" class="mx-3">
+      <section id="benefits" class="mx-3 mx-lg-5">
         <div class="my-5 pb-xl-5">
           <h1 class="text-center pb-xl-5 mb-xl-5">Browse everything.</h1>
         </div>
@@ -322,65 +350,67 @@
             </div>
           </div>
         </div>
-        <div class="ati-img-ctn px-4 my-5 py-3">
+        <div class="ati-img-ctn px-5 my-5 py-3 ">
           <img
             src="assets/img/nature.jpg"
             alt="Nature landscape"
             class="rounded-image1"
           />
         </div>
-        <div class="oti3 container px-4">
-          <div class="row">
-            <hr class="my-5 py-2" />
-            <div class="col-12">
-              <h1 class="my-4">See the Big Picture</h1>
-              <p>
-                Area turns your data into clear, vibrant visuals that show you
-                exactly what's happening in each region.
-              </p>
+        <div class="features-row mx-3">
+          <div class="oti3 container px-4">
+            <div class="row">
+              <hr class="my-5 py-2" />
+              <div class="col-12">
+                <h1 class="my-4">See the Big Picture</h1>
+                <p>
+                  Area turns your data into clear, vibrant visuals that show you
+                  exactly what's happening in each region.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <hr class="my-4" />
+              <div class="raph1 mx-0 px-0 col-1 text-start">01</div>
+              <div class="raph2 col-11">
+                Spot Trends in Seconds: No more digging through numbers.
+              </div>
+            </div>
+            <div class="row">
+              <hr class="my-4" />
+              <div class="raph1 mx-0 px-0 col-1 text-start">02</div>
+              <div class="raph2 col-11">
+                Get Everyone on the Same Page: Share easy-to-understand reports
+                with your team.
+              </div>
+            </div>
+            <div class="row">
+              <hr class="my-4" />
+              <div class="raph1 mx-0 px-0 col-1 text-start">03</div>
+              <div class="raph2 col-11">
+                Make Presentations Pop: Interactive maps and dashboards keep your
+                audience engaged.
+              </div>
+            </div>
+            <div class="row">
+              <hr class="my-4" />
+              <div class="raph1 mx-0 px-0 col-1 text-start">04</div>
+              <div class="raph2 col-11">
+                Your Global Snapshot: Get a quick, clear overview of your entire
+                operation.
+              </div>
+            </div>
+            <div class="col my-5">
+              <button class="btn rounded-5 px-4 py-3">Discover More</button>
             </div>
           </div>
-          <div class="row">
-            <hr class="my-4" />
-            <div class="raph1 mx-0 px-0 col-1 text-start">01</div>
-            <div class="raph2 col-11">
-              Spot Trends in Seconds: No more digging through numbers.
-            </div>
+          <div class="img-container2 my-5 px-4 pt-3 pb-5">
+            <img
+              src="assets/img/circle.png"
+              alt="Nature landscape"
+              class="raph3"
+            />
           </div>
-          <div class="row">
-            <hr class="my-4" />
-            <div class="raph1 mx-0 px-0 col-1 text-start">02</div>
-            <div class="raph2 col-11">
-              Get Everyone on the Same Page: Share easy-to-understand reports
-              with your team.
-            </div>
-          </div>
-          <div class="row">
-            <hr class="my-4" />
-            <div class="raph1 mx-0 px-0 col-1 text-start">03</div>
-            <div class="raph2 col-11">
-              Make Presentations Pop: Interactive maps and dashboards keep your
-              audience engaged.
-            </div>
-          </div>
-          <div class="row">
-            <hr class="my-4" />
-            <div class="raph1 mx-0 px-0 col-1 text-start">04</div>
-            <div class="raph2 col-11">
-              Your Global Snapshot: Get a quick, clear overview of your entire
-              operation.
-            </div>
-          </div>
-          <div class="col my-5">
-            <button class="btn rounded-5 px-4 py-3">Discover More</button>
-          </div>
-        </div>
-        <div class="img-container2 my-5 px-4 pt-3 pb-5">
-          <img
-            src="assets/img/circle.png"
-            alt="Nature landscape"
-            class="raph3"
-          />
         </div>
       </section>
       <hr class="my-5 mx-5" />
@@ -394,7 +424,7 @@
           <button class="btn rounded-5 px-4 py-3">Discover More</button>
         </div>
 
-        <div class="comparison-section text-center">
+        <div class="comparison-section text-center mx-5">
           <div class="table-wrapper">
             <table class="comparison-table-precise">
               <thead class="">
@@ -494,9 +524,9 @@
           </div>
         </div>
       </section>
-      <div id="lefa" class="px-2 py-5">
-        <div class="row">
-          <div class="col-12">
+      <div id="lefa" class="px-5 my-5 ">
+        <div class="row align-items-start">
+          <div class="col-12 col-lg-6 order-lg-1">
             <div class="img-container4">
               <img
                 src="assets/img/boule.png"
@@ -505,8 +535,8 @@
               />
             </div>
           </div>
-          <div class="col-12 pt-4 mt-5 px-3">
-            <hr />
+          <div class="col-12 col-lg-6 order-lg-2 pt-4 mt-5 px-3 pt-lg-0 mt-lg-0">
+            <hr class="mt-lg-0 mb-lg-5" />
             <h6 class="pb-5 px-4 mt-5">
               “I was skeptical, but Area has completely transformed the way I
               manage my business. The data visualizations are so clear and
@@ -525,7 +555,7 @@
         <div class="row mx-4 align-items-center">
           <hr class="my-5" />
           <div class="helen col-12 col-md-8 col-lg-9">
-            <h2 class="pt-5 mb-0">Map Your Success</h2>
+            <h2 class="py-5 mb-0">Map Your Success</h2>
           </div>
           <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0 pt-5 text-md-end">
             <button class="btn rounded-5 px-4 py-3">Discover More</button>
@@ -565,7 +595,7 @@
             </div>
           </div>
         </div>
-        <div class="oti6 pt-5 mx-3">
+        <div class="oti6 pt-5 mx-3 px-5">
           <div class="img-container6">
             <img
               src="assets/img/montagne.png"

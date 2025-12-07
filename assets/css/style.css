@@ -543,6 +543,38 @@ body {
     }
   }
 
+  /* Features row layout for desktop (>= 992px) */
+  @media (min-width: 992px) {
+    .features-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .features-row .oti3 {
+      flex: 1 1 50%;
+      min-width: 0;
+    }
+
+    .features-row .img-container2 {
+      flex: 1 1 50%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      min-width: 0;
+    }
+
+    .features-row .img-container2 .raph3 {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-width: none;
+    }
+  }
+
   section#specs {
     div.ati {
       span {
@@ -895,6 +927,29 @@ body {
     font-weight: var(--fw-light);
     color: var(--color-secondary);
     line-height: 40px;
+  }
+
+  @media (min-width: 992px) {
+    /* Image à gauche + 50/50 en lg déjà géré par col-lg-6 */
+    #lefa .img-container4 {
+      display: flex;
+      justify-content: flex-start;
+    }
+    #lefa .img-container4 .raph4 {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Augmenter légèrement la taille du texte en lg */
+    #lefa h6 {
+      font-size: var(--fs-xl); /* ~20px */
+      line-height: 1.6;
+    }
+    #lefa p {
+      font-size: 1.0625rem; /* ~17px */
+      line-height: 1.6;
+    }
   }
 
   section#how {
