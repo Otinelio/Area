@@ -1086,3 +1086,32 @@ footer {
     text-decoration-line: none;
   }
 }
+
+/* Révélation au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 800ms ease,
+    transform 800ms ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Option: décalage (stagger) via variable --reveal-delay */
+.reveal {
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+/* Accessibilité: réduire les mouvements si demandé par l’utilisateur */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
