@@ -81,28 +81,28 @@
                 <a
                   class="nav-link active col py-4 m-0 p-md-0"
                   aria-current="page"
-                  href="#"
+                  href="#benefitsId"
                   >Benefits</a
                 >
                 <hr />
                 <a
                   class="nav-link active col py-4 m-0 p-md-0"
                   aria-current="page"
-                  href="#"
+                  href="#SpecsId"
                   >Specifications</a
                 >
                 <hr />
                 <a
                   class="nav-link active col py-4 m-0 p-md-0"
                   aria-current="page"
-                  href="#"
+                  href="#howToId"
                   >How-to</a
                 >
                 <hr />
                 <a
                   class="nav-link active col py-4 m-0 p-md-0"
                   aria-current="page"
-                  href="#"
+                  href="#contactId"
                   >Contact Us</a
                 >
               </div>
@@ -126,7 +126,9 @@
           <h1 class="text-center pb-xl-5 mb-xl-5">Browse everything.</h1>
         </div>
         <div class="oti col-12 my-5 reveal">
-          <div class="rounded-5 pt-xl-5 px-4 px-md-5 position-relative green-card">
+          <div
+            class="rounded-5 pt-xl-5 px-4 px-md-5 position-relative green-card"
+          >
             <picture>
               <source
                 media="(min-width: 768px)"
@@ -305,7 +307,7 @@
               </div>
             </div>
           </div>
-          <div class="oti1 row">
+          <div id="benefitsId" class="oti1 row">
             <div class="reveal col-12">
               <hr class="my-5 py-2" />
               <span>Benefits</span>
@@ -339,7 +341,9 @@
                 communication and enhanced user experience.
               </p>
             </div>
-            <div class="reveal col-12 col-md-6 col-lg-4 col-xl-3 benefit-item-4">
+            <div
+              class="reveal col-12 col-md-6 col-lg-4 col-xl-3 benefit-item-4"
+            >
               <hr class="my-5" />
               <i class="bi bi-graph-up-arrow"></i>
               <h6 class="my-4">Visualize Growth</h6>
@@ -350,7 +354,7 @@
             </div>
           </div>
         </div>
-        <div class="reveal ati-img-ctn px-0 px-md-5 my-5 py-3 ">
+        <div class="reveal ati-img-ctn px-0 px-md-5 my-5 py-3">
           <img
             src="assets/img/nature.jpg"
             alt="Nature landscape"
@@ -388,8 +392,8 @@
               <hr class="my-4" />
               <div class="raph1 mx-0 px-0 col-1 text-start">03</div>
               <div class="raph2 reveal col-11">
-                Make Presentations Pop: Interactive maps and dashboards keep your
-                audience engaged.
+                Make Presentations Pop: Interactive maps and dashboards keep
+                your audience engaged.
               </div>
             </div>
             <div class="row">
@@ -415,7 +419,7 @@
       </section>
       <hr class="my-5 mx-5" />
       <section id="specs" class="px-2 py-5 reveal">
-        <div class="ati col-12 text-center reveal">
+        <div id="specsId" class="ati col-12 text-center reveal">
           <span>Specs</span>
           <h1 class="my-4">Why Choose Area?</h1>
           <p>Area provides real insights, without the data overload.</p>
@@ -524,7 +528,7 @@
           </div>
         </div>
       </section>
-      <div id="lefa" class="px-2 px-md-5 my-5 ">
+      <div id="lefa" class="px-2 px-md-5 my-5">
         <div class="row align-items-start">
           <div class="col-12 col-lg-6 order-lg-1 reveal">
             <div class="img-container4 reveal">
@@ -535,7 +539,9 @@
               />
             </div>
           </div>
-          <div class="col-12 reveal col-lg-6 order-lg-2 pt-4 mt-5 px-3 pt-lg-0 mt-lg-0">
+          <div
+            class="col-12 reveal col-lg-6 order-lg-2 pt-4 mt-5 px-3 pt-lg-0 mt-lg-0"
+          >
             <hr class="mt-lg-0 mb-lg-5" />
             <h6 class="pb-5 px-1 mt-5">
               “I was skeptical, but Area has completely transformed the way I
@@ -552,7 +558,7 @@
       </div>
 
       <section id="how" class="mx-3">
-        <div class="row mx-4 align-items-center reveal">
+        <div id="howToId" class="row mx-4 align-items-center reveal">
           <hr class="my-5" />
           <div class="helen col-12 col-md-8 col-lg-9">
             <h2 class="py-5 mb-0">Map Your Success</h2>
@@ -608,7 +614,7 @@
       <hr class="my-5" />
 
       <section id="contact" class="mx-3 text-center">
-        <div class="row justify-content-center reveal">
+        <div id="contactId" class="row justify-content-center reveal">
           <div class="raph4 col-12 col-md-8 col-lg-7">
             <h2 class="pt-5 pb-4">Connect with us</h2>
             <p class="py-4">
@@ -623,6 +629,74 @@
             </button>
           </div>
         </div>
+        <!-- Formulaire de contact -->
+        <div class="row justify-content-center pt-5">
+          <div class="col-12 col-md-10 col-lg-8">
+            <!-- Titre et description du formulaire -->
+            <div class="form-header text-center mb-4 mb-md-5">
+              <h3 class="form-title mb-3">Get in Touch</h3>
+              <p class="form-description">
+                Fill out the form below and our team will get back to you within
+                24 hours.
+              </p>
+            </div>
+
+            <form class="contact-form">
+              <div class="row g-3 g-md-4">
+                <!-- Nom & Prénoms -->
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-input"
+                    placeholder="Nom & Prénoms"
+                    required
+                  />
+                </div>
+
+                <!-- Numéro -->
+                <div class="col-12 col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control form-input"
+                    placeholder="Numéro de téléphone"
+                    required
+                  />
+                </div>
+
+                <!-- Sujet -->
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control form-input"
+                    placeholder="Sujet"
+                    required
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <textarea
+                    class="form-control form-input"
+                    rows="5"
+                    placeholder="Votre message"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Bouton Submit -->
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-submit rounded-5 px-5 py-3 w-100 w-md-auto"
+                  >
+                    Envoyer le message
+                    <i class="bi bi-send-fill ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
 
       <hr class="my-5" />
@@ -632,9 +706,9 @@
           <div class="row mb-5">
             <div class="col-12">
               <div class="d-flex flex-column flex-md-row gap-3 gap-md-4">
-                <a href="#" class="footer-link">Benefits</a>
-                <a href="#" class="footer-link">Specifications</a>
-                <a href="#" class="footer-link">How-to</a>
+                <a href="#benefitsId" class="footer-link">Benefits</a>
+                <a href="#specsId" class="footer-link">Specifications</a>
+                <a href="#howToId" class="footer-link">How-to</a>
               </div>
             </div>
           </div>
